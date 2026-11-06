@@ -1,0 +1,41 @@
+# Ajustements des regles detekt par defaut (voir DECISIONS.md D023).
+# Principe : on garde les regles qui trouvent des defauts (exceptions avalees, complexite
+# des fonctions non graphiques…), on adapte celles qui contredisent Compose ou ktlint.
+
+style:
+  MaxLineLength:
+    maxLineLength: 160 # meme limite que ktlint (.editorconfig)
+  MagicNumber:
+    # Compose : dp, couleurs, durees d'animation sont des constantes de mise en page.
+    ignoreAnnotated: ['Composable', 'Preview']
+    excludes: ['**/test/**', '**/theme/**', '**/widget/**']
+    # Codes HTTP et unites de temps courantes.
+    ignoreNumbers: ['-1', '0', '1', '2', '24', '60', '100', '1000', '200', '204', '304', '400', '401', '403', '404', '409', '410', '429', '500', '503']
+  ReturnCount:
+    max: 3
+    excludeGuardClauses: true
+
+naming:
+  FunctionNaming:
+    ignoreAnnotated: ['Composable'] # convention Compose : PascalCase
+    excludes: ['**/test/**'] # noms de tests en phrase
+  MatchingDeclarationName:
+    active: false # fichiers regroupant un ecran et ses petits composants
+
+complexity:
+  LongMethod:
+    ignoreAnnotated: ['Composable'] # un ecran Compose est une description, pas un algorithme
+  CyclomaticComplexMethod:
+    ignoreAnnotated: ['Composable']
+  TooManyFunctions:
+    excludes: ['**/test/**']
+    allowedFunctionsPerInterface: 40 # interfaces Retrofit et DAO Room : une fonction par route ou requete
+    allowedFunctionsPerClass: 25
+    ignorePrivate: true
+
+exceptions:
+  SwallowedException:
+    # Conversion volontaire en erreur metier (Offline, Rejected…) sans journaliser le detail
+    # (5bis : aucune donnee personnelle dans les journaux).
+    ignoredExceptionTypes: ['IOException', 'HttpException', 'SerializationException', 'SecurityException',
+                            'InterruptedException', 'MalformedURLException', 'NumberFormatException', 'ParseException']

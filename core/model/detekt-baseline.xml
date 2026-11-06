@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>CyclomaticComplexMethod:Kiosque.kt:Kiosque$fun apply: List&lt;Source&gt;</ID>
+    <ID>CyclomaticComplexMethod:ParamValidator.kt:ParamValidator$fun validate: Result</ID>
+    <ID>MagicNumber:ParamValidator.kt:ParamValidator$120</ID>
+  </CurrentIssues>
+</SmellBaseline>

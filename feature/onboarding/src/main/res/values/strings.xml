@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ob_passer">Passer</string>
+    <string name="ob_suivant">Suivant</string>
+    <string name="ob_commencer">C\'est parti</string>
+    <string name="ob_etape">Étape %1$d sur %2$d</string>
+    <string name="ob1_titre">Que du signal</string>
+    <string name="ob1_texte">Plus de 260 alertes gratuites : météo, coupures, vie locale, bons plans… Vous choisissez, on vous prévient. Sans publicité, sans traceur.</string>
+    <string name="ob2_titre">Qu\'est-ce qui vous intéresse ?</string>
+    <string name="ob2_texte">Touchez quelques thèmes : nous vous suggérons des alertes, rangées dans vos favoris.</string>
+    <string name="ob2_departement">Votre département (facultatif)</string>
+    <string name="ob2_choisir">Choisir</string>
+    <plurals name="ob2_n_suggestions">
+        <item quantity="one">%1$d suggestion ajoutée à vos favoris</item>
+        <item quantity="many">%1$d suggestions ajoutées à vos favoris</item>
+        <item quantity="other">%1$d suggestions ajoutées à vos favoris</item>
+    </plurals>
+    <string name="ob3_titre">Être prévenu sur ce téléphone</string>
+    <string name="ob3_texte">Pour vous avertir au bon moment, l\'app a besoin de votre accord pour afficher des notifications. La nuit, elles restent silencieuses.</string>
+    <string name="ob3_autoriser">Autoriser les notifications</string>
+    <string name="ob3_reglages">Ouvrir les réglages des notifications</string>
+    <string name="ob4_titre">Comment recevoir vos alertes ?</string>
+    <string name="ob4_texte">Un petit relais est nécessaire pour recevoir vos alertes à la seconde. ntfy, gratuit et libre, joue ce rôle.</string>
+    <string name="ob4_ntfy">Installer ntfy</string>
+    <string name="ob4_ntfy_fdroid">Installer ntfy avec F-Droid</string>
+    <string name="ob4_periodique">Vérification périodique (un peu moins instantanée)</string>
+    <string name="ob4_plus_tard">Plus tard</string>
+    <string name="ob4_plus_tard_message">Vérification périodique activée. Vous pourrez installer ntfy plus tard.</string>
+    <string name="tuto_page">%1$d / %2$d</string>
+    <string name="tuto_passer">Passer</string>
+    <string name="tuto_suivant">Suivant</string>
+    <string name="tuto_precedent">Précédent</string>
+    <string name="tuto_commencer">C\'est parti</string>
+    <string name="tuto_1_titre">Suivez ce qui compte pour vous</string>
+    <string name="tuto_1_texte">Choisissez des sources : vigilance météo, rappels de produits, tarifs, agendas… Touchez « Suivre » et La Bonne Alerte veille pour vous.</string>
+    <string name="tuto_2_titre">Alerte ou Information</string>
+    <string name="tuto_2_texte">Une Alerte demande votre attention (danger, échéance, rappel). Une Information vous tient au courant, sans urgence. Les vignettes l\'indiquent d\'un coup d\'œil.</string>
+    <string name="tuto_3_titre">Des notifications, pas du bruit</string>
+    <string name="tuto_3_texte">Vous êtes prévenu dès qu\'une source suivie change. Heures calmes, plafond par heure et choix entre notification et e-mail se règlent dans Réglages.</string>
+    <string name="tuto_4_titre">Retrouvez tout</string>
+    <string name="tuto_4_texte">Vos alertes, vos favoris et l\'historique des notifications restent dans l\'app. Vous pourrez revoir ce tutoriel dans Réglages, rubrique Aide.</string>
+</resources>

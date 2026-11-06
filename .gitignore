@@ -1,0 +1,32 @@
+# Gradle / Android
+.gradle/
+build/
+**/build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+# IDE
+.idea/
+*.iml
+.vscode/
+.kotlin/
+# Secrets (jamais dans le depot : voir C:\Dev\secrets\lba-app\)
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+*.p12
+*.pem
+google-services.json
+.env
+.env.*
+# Divers
+node_modules/
+*.log
+build-log.txt
+/release/

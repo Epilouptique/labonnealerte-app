@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icone de l'app a partir de l'image PNG (fastlane icon.png). Retrait de 19 % : l'image tient
+     dans la zone sure de l'icone adaptative (Android la rogne en rond ou carre arrondi). -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_launcher_image"
+    android:inset="15%" />

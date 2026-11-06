@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="kiosque_titre">Kiosque</string>
+    <string name="kiosque_sous_titre">Choisissez ce qui compte pour vous. Que du signal.</string>
+    <string name="kiosque_recherche">Rechercher une alerte</string>
+    <string name="kiosque_effacer">Effacer la recherche</string>
+    <string name="chip_toutes">Toutes</string>
+    <string name="chip_nouveautes">Nouveau</string>
+    <string name="chip_bons_plans">Bons plans</string>
+    <string name="chip_populaires">Tendance</string>
+    <string name="chip_favoris">Favoris</string>
+    <string name="chip_en_cours">En cours</string>
+    <string name="chip_plus">Toutes les catégories</string>
+    <string name="chip_categorie">%1$s</string>
+    <string name="feuille_categories_titre">Toutes les catégories</string>
+    <string name="feuille_toute_famille">Tout « %1$s »</string>
+    <string name="en_ce_moment">En ce moment</string>
+    <plurals name="en_ce_moment_zones">
+        <item quantity="one">%1$d zone concernée</item>
+        <item quantity="many">%1$d zones concernées</item>
+        <item quantity="other">%1$d zones concernées</item>
+    </plurals>
+    <string name="resultats_n">%1$d alertes</string>
+    <string name="resultats_un">1 alerte</string>
+    <string name="vide_recherche_titre">Aucune alerte ne correspond</string>
+    <string name="vide_recherche_message">Essayez un autre mot, ou retirez un filtre.</string>
+    <string name="favoris_titre">Mes favoris</string>
+    <string name="favoris_retour_cd">Retour</string>
+    <string name="vide_favoris_titre">Pas encore de favoris</string>
+    <string name="vide_favoris_message">Touchez le cœur sur la fiche d\'une alerte pour la retrouver ici.</string>
+    <string name="retirer_filtres">Retirer les filtres</string>
+    <string name="erreur_titre">Impossible de charger le kiosque</string>
+    <string name="erreur_message">Vérifiez votre connexion internet, puis réessayez.</string>
+    <string name="trier">Trier</string>
+    <string name="tri_site">Ordre du site</string>
+    <string name="tri_nom">Nom (A à Z)</string>
+    <string name="tri_abonnes">Les plus suivies</string>
+    <string name="tri_recentes">Les plus récentes</string>
+    <string name="action_suivre">Suivre</string>
+    <string name="action_ne_plus_suivre">Ne plus suivre</string>
+    <string name="annuler">Annuler</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="follow_suivie">Vous suivez « %1$s ».</string>
+    <string name="follow_retiree">Vous ne suivez plus « %1$s ».</string>
+    <string name="follow_connexion">Connectez-vous pour suivre une alerte.</string>
+    <string name="follow_hors_ligne">Pas de connexion internet : réessayez plus tard.</string>
+    <string name="follow_refus">Ce choix n\'a pas été accepté.</string>
+    <string name="follow_erreur">Le service ne répond pas. Réessayez dans un moment.</string>
+    <string name="kiosque_marque_cd">La Bonne Alerte, Kiosque</string>
+</resources>

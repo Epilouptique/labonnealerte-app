@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Libelles des familles de categories (server/categories.js GROUPS n'a pas de libelle : DECISIONS.md D010). -->
+<resources>
+    <string name="famille_bons_plans_conso">Bons plans</string>
+    <string name="famille_shopping">Shopping</string>
+    <string name="famille_billetterie_sorties">Billetterie et sorties</string>
+    <string name="famille_voyages">Voyages</string>
+    <string name="famille_meteo_risques">Météo et risques</string>
+    <string name="famille_environnement_nature">Environnement et nature</string>
+    <string name="famille_energie">Énergie et eau</string>
+    <string name="famille_transports">Transports</string>
+    <string name="famille_tech_dev">Tech et numérique</string>
+    <string name="famille_securite_cyber">Sécurité et arnaques</string>
+    <string name="famille_administration">Démarches et vie pratique</string>
+    <string name="famille_pro_marches">Pros et marchés publics</string>
+    <string name="famille_emploi_formation">Emploi et formation</string>
+    <string name="famille_finance">Argent et finance</string>
+    <string name="famille_sante">Santé</string>
+    <string name="famille_immobilier">Logement</string>
+    <string name="famille_culture_medias">Culture et médias</string>
+    <string name="famille_gaming">Jeux vidéo</string>
+    <string name="famille_sport">Sport</string>
+    <string name="famille_vie_locale">Vie locale</string>
+    <string name="famille_alimentation">Alimentation</string>
+    <string name="famille_agriculture_jardin">Agriculture et jardin</string>
+    <string name="famille_auto_moto">Auto et moto</string>
+    <string name="famille_animaux">Animaux</string>
+    <string name="famille_espace_science">Espace et sciences</string>
+    <string name="famille_solidarite">Solidarité</string>
+    <string name="famille_francophonie_international">Francophonie et monde</string>
+    <string name="famille_autre">Divers</string>
+</resources>

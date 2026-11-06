@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>CyclomaticComplexMethod:EventIngestor.kt:EventIngestor$private suspend fun handle: Boolean</ID>
+    <ID>MagicNumber:AlertNotifier.kt:AlertNotifier$10</ID>
+    <ID>MagicNumber:AlertNotifier.kt:AlertNotifier$3</ID>
+    <ID>MagicNumber:EventIngestor.kt:EventIngestor$32</ID>
+    <ID>ReturnCount:EventIngestor.kt:EventIngestor$private suspend fun handle: Boolean</ID>
+  </CurrentIssues>
+</SmellBaseline>

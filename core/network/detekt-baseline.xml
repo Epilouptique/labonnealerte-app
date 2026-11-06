@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>ComplexCondition:DtoDefaultsTest.kt:DtoDefaultsTest$m.parameterCount == 0 &amp;&amp; m.declaringClass == dto.javaClass &amp;&amp; (n.startsWith("get") || n.startsWith("is") || n.startsWith("component"))</ID>
+    <ID>MagicNumber:NetworkModule.kt:NetworkModule$15</ID>
+    <ID>MagicNumber:NetworkModule.kt:NetworkModule$30</ID>
+  </CurrentIssues>
+</SmellBaseline>

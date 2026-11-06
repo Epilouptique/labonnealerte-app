@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ech_titre">Mes échéances</string>
+    <string name="ech_intro">Contrôle technique, ramonage, changement de filtre… On vous prévient avant, et le jour J.</string>
+    <string name="ech_vide_titre">Aucune échéance</string>
+    <string name="ech_vide_message">Ajoutez une tâche qui revient régulièrement : on s\'en souvient pour vous.</string>
+    <string name="ech_connexion">Connectez-vous pour gérer vos échéances.</string>
+    <string name="ech_se_connecter">Se connecter</string>
+    <string name="ech_ajouter">Ajouter une échéance</string>
+    <string name="ech_fait">C\'est fait</string>
+    <string name="ech_supprimer">Supprimer</string>
+    <string name="ech_supprimer_confirmer">Ne plus suivre « %1$s » ?</string>
+    <string name="ech_aujourdhui">C\'est aujourd\'hui</string>
+    <plurals name="ech_en_retard">
+        <item quantity="one">En retard de %1$d jour</item>
+        <item quantity="many">En retard de %1$d jours</item>
+        <item quantity="other">En retard de %1$d jours</item>
+    </plurals>
+    <plurals name="ech_dans">
+        <item quantity="one">Dans %1$d jour (%2$s)</item>
+        <item quantity="many">Dans %1$d jours (%2$s)</item>
+        <item quantity="other">Dans %1$d jours (%2$s)</item>
+    </plurals>
+    <string name="ech_demain">Demain</string>
+    <string name="ech_compteur">Suivi au compteur sur le site</string>
+    <string name="ech_libelle">Quoi ? (ex. : changer le filtre de la hotte)</string>
+    <string name="ech_derniere_fois">Fait la dernière fois le</string>
+    <string name="ech_choisir_date">Choisir la date</string>
+    <string name="ech_tous_les">Tous les</string>
+    <string name="ech_jours">jours</string>
+    <string name="ech_semaines">semaines</string>
+    <string name="ech_mois">mois</string>
+    <string name="ech_ans">ans</string>
+    <plurals name="ech_prevenir">
+        <item quantity="one">Prévenir %1$d jour avant</item>
+        <item quantity="many">Prévenir %1$d jours avant</item>
+        <item quantity="other">Prévenir %1$d jours avant</item>
+    </plurals>
+    <plurals name="ech_prevenir_etat">
+        <item quantity="one">%1$d jour avant</item>
+        <item quantity="many">%1$d jours avant</item>
+        <item quantity="other">%1$d jours avant</item>
+    </plurals>
+    <string name="ech_retour">Retour</string>
+    <string name="ech_attention">À faire maintenant</string>
+    <string name="ech_enregistrer">Enregistrer</string>
+    <string name="ech_msg_ok">C\'est noté.</string>
+    <string name="ech_msg_hors_ligne">Pas de connexion internet.</string>
+    <string name="ech_msg_refus">Non accepté :</string>
+    <string name="ech_msg_erreur">Le service ne répond pas. Réessayez dans un moment.</string>
+</resources>

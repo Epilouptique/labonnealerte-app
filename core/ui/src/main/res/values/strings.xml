@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="etat_calme">Rien à signaler</string>
+    <string name="etat_active">Alerte en cours</string>
+    <string name="etat_incident">Surveillance interrompue</string>
+    <string name="etat_aucun">Service partenaire</string>
+    <string name="badge_officiel">Officiel</string>
+    <string name="badge_verifie">Vérifié</string>
+    <string name="badge_communaute">Communautaire</string>
+    <string name="hors_ligne">Hors ligne : vous voyez les dernières informations enregistrées.</string>
+    <string name="chargement">Chargement…</string>
+    <string name="reessayer">Réessayer</string>
+    <!-- Dates : langue et motifs (java.time) a adapter dans chaque traduction. -->
+    <string name="locale_dates">fr</string>
+    <string name="format_date_heure">d MMMM yyyy \'à\' HH:mm</string>
+    <string name="format_jour">EEEE d MMMM</string>
+    <string name="cd_mascotte">Mascotte de La Bonne Alerte</string>
+    <string name="cd_favori_ajouter">Ajouter aux favoris</string>
+    <string name="cd_favori_retirer">Retirer des favoris</string>
+    <string name="deja_abonne">Déjà abonné</string>
+    <string name="carte_suivre">Suivre</string>
+    <string name="carte_suivi">Suivi</string>
+    <string name="annuler">Annuler</string>
+    <string name="valider">Valider</string>
+    <string name="choisir_departement">Choisir un département</string>
+    <string name="recherche_departement">Numéro ou nom</string>
+</resources>

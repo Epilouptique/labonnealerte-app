@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>MagicNumber:Famille.kt:Famille.ADMINISTRATION$0xFF6F86A8</ID>
+    <ID>MagicNumber:Famille.kt:Famille.AGRICULTURE$0xFF6A994E</ID>
+    <ID>MagicNumber:Famille.kt:Famille.ALIMENTATION$0xFFE36767</ID>
+    <ID>MagicNumber:Famille.kt:Famille.ANIMAUX$0xFFC08552</ID>
+    <ID>MagicNumber:Famille.kt:Famille.AUTO$0xFF5D6D7E</ID>
+    <ID>MagicNumber:Famille.kt:Famille.AUTRE$0xFF8D8D8D</ID>
+    <ID>MagicNumber:Famille.kt:Famille.BILLETTERIE$0xFF9B5DE5</ID>
+    <ID>MagicNumber:Famille.kt:Famille.BONS_PLANS$0xFFD9467A</ID>
+    <ID>MagicNumber:Famille.kt:Famille.CULTURE$0xFFA567E3</ID>
+    <ID>MagicNumber:Famille.kt:Famille.EMPLOI$0xFF4C8C8A</ID>
+    <ID>MagicNumber:Famille.kt:Famille.ENERGIE$0xFFE0A526</ID>
+    <ID>MagicNumber:Famille.kt:Famille.ENVIRONNEMENT$0xFF3FA34D</ID>
+    <ID>MagicNumber:Famille.kt:Famille.ESPACE$0xFF3D5A80</ID>
+    <ID>MagicNumber:Famille.kt:Famille.FINANCE$0xFF2F9E7A</ID>
+    <ID>MagicNumber:Famille.kt:Famille.FRANCOPHONIE$0xFF3A86FF</ID>
+    <ID>MagicNumber:Famille.kt:Famille.GAMING$0xFF6C5CE7</ID>
+    <ID>MagicNumber:Famille.kt:Famille.IMMOBILIER$0xFF8C6D4F</ID>
+    <ID>MagicNumber:Famille.kt:Famille.METEO$0xFFE3823F</ID>
+    <ID>MagicNumber:Famille.kt:Famille.PRO$0xFF7A6F5A</ID>
+    <ID>MagicNumber:Famille.kt:Famille.SANTE$0xFFD9534F</ID>
+    <ID>MagicNumber:Famille.kt:Famille.SECURITE$0xFFB4473F</ID>
+    <ID>MagicNumber:Famille.kt:Famille.SHOPPING$0xFFC0569B</ID>
+    <ID>MagicNumber:Famille.kt:Famille.SOLIDARITE$0xFFE07A5F</ID>
+    <ID>MagicNumber:Famille.kt:Famille.SPORT$0xFF2E8B57</ID>
+    <ID>MagicNumber:Famille.kt:Famille.TECH$0xFF5B7DE3</ID>
+    <ID>MagicNumber:Famille.kt:Famille.TRANSPORTS$0xFF4F7CAC</ID>
+    <ID>MagicNumber:Famille.kt:Famille.VIE_LOCALE$0xFFB07D3A</ID>
+    <ID>MagicNumber:Famille.kt:Famille.VOYAGES$0xFF3A9AD9</ID>
+    <ID>MagicNumber:OptionPicker.kt:3</ID>
+    <ID>SwallowedException:Links.kt:e: ActivityNotFoundException</ID>
+  </CurrentIssues>
+</SmellBaseline>

@@ -1,0 +1,98 @@
+name: Reproductibilite Linux
+
+# Deux builds release independants (deux dossiers, caches Gradle de build separes) sur
+# ubuntu-latest, puis comparaison des SHA-256 ; ensuite fdroid lint et fdroid scanner
+# (sources + APK) sur la recette docs/fdroid. APK NON signees : la signature de Hugo
+# n'intervient pas, c'est le contenu que F-Droid compare (AllowedAPKSigningKeys).
+# Declenchement manuel et a chaque modification de main.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  reproductibilite:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: build-a
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Second checkout dans un autre chemin
+        run: cp -a build-a build-b
+
+      - name: Build A
+        working-directory: build-a
+        run: ./gradlew --no-daemon --no-build-cache --no-configuration-cache assembleFossRelease
+
+      - name: Build B
+        working-directory: build-b
+        run: ./gradlew --no-daemon --no-build-cache --no-configuration-cache assembleFossRelease
+
+      - name: Comparer les SHA-256
+        run: |
+          A=build-a/app/build/outputs/apk/foss/release/app-foss-release-unsigned.apk
+          B=build-b/app/build/outputs/apk/foss/release/app-foss-release-unsigned.apk
+          [ -f "$A" ] || A=$(ls build-a/app/build/outputs/apk/foss/release/*.apk | head -1)
+          [ -f "$B" ] || B=$(ls build-b/app/build/outputs/apk/foss/release/*.apk | head -1)
+          sha256sum "$A" "$B" | tee sha256.txt
+          if [ "$(sha256sum < "$A")" != "$(sha256sum < "$B")" ]; then
+            echo "::error::Les deux builds different."
+            pip install --quiet diffoscope 2>/dev/null || true
+            (command -v diffoscope && diffoscope --text diff.txt "$A" "$B") || (unzip -l "$A" > a.txt; unzip -l "$B" > b.txt; diff a.txt b.txt > diff.txt || true)
+            exit 1
+          fi
+          echo "Build reproductible : memes octets."
+
+      - name: Installer fdroidserver
+        run: |
+          python3 -m venv fd
+          ./fd/bin/pip install --quiet fdroidserver
+          sudo apt-get update -qq && sudo apt-get install -y -qq apksigner > /dev/null || true
+
+      - name: fdroid lint (listes officielles de fdroiddata)
+        run: |
+          mkdir -p fdd/metadata fdd/config
+          cp build-a/docs/fdroid/fr.labonnealerte.app.yml fdd/metadata/
+          for f in categories antiFeatures; do
+            curl -sfLo fdd/config/$f.yml https://gitlab.com/fdroid/fdroiddata/-/raw/master/config/$f.yml
+          done
+          sed -i '/^\s*icon:/d' fdd/config/*.yml
+          cd fdd && ../fd/bin/python -m fdroidserver lint fr.labonnealerte.app
+
+      - name: fdroid scanner (sources et APK)
+        env:
+          ANDROID_HOME: /usr/local/lib/android/sdk
+        run: |
+          rm -rf scan-src && git -C build-a archive --format=tar --prefix=scan-src/ HEAD | tar -x
+          cd fdd
+          ../fd/bin/python - <<'PY'
+          import sys
+          from fdroidserver import common, scanner
+          common.read_config()
+          scanner.options = type('o', (), {'json': False, 'verbose': False, 'refresh': False})()
+          n = scanner.scan_source('../scan-src')
+          print('Problemes dans les sources :', n)
+          sys.exit(1 if n else 0)
+          PY
+          ../fd/bin/python -m fdroidserver scanner -e ../build-a/app/build/outputs/apk/foss/release/*.apk
+
+      - name: Resultats
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reproductibilite
+          path: |
+            sha256.txt
+            diff.txt
+            build-a/app/build/outputs/apk/foss/release/*.apk
+          if-no-files-found: ignore

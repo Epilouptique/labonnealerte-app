@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="canal_urgences">Urgences et vigilances rouges</string>
+    <string name="canal_urgences_desc">Dangers immédiats : son et affichage en haut de l\'écran.</string>
+    <string name="canal_meteo">Météo et environnement</string>
+    <string name="canal_meteo_desc">Vigilances, qualité de l\'air, pollens, crues…</string>
+    <string name="canal_vie_locale">Vie locale</string>
+    <string name="canal_vie_locale_desc">Votre commune, démarches, santé.</string>
+    <string name="canal_services">Services et pannes</string>
+    <string name="canal_services_desc">Coupures, transports, pannes de services en ligne.</string>
+    <string name="canal_bons_plans">Bons plans et culture</string>
+    <string name="canal_bons_plans_desc">Promotions, jeux offerts, sorties. Discret.</string>
+    <string name="canal_communaute">Communauté</string>
+    <string name="canal_communaute_desc">Animaux perdus et signalements près de chez vous.</string>
+    <string name="canal_echeances">Échéances</string>
+    <string name="canal_echeances_desc">Rappels de vos tâches à faire.</string>
+    <string name="canal_systeme">Fonctionnement de l\'app</string>
+    <string name="canal_systeme_desc">Tests et messages techniques, rares.</string>
+    <string name="canal_test">Test des notifications</string>
+    <string name="canal_test_desc">Notification de test envoyée depuis l\'aide, avec le son habituel.</string>
+    <string name="notif_retour_calme">Retour au calme</string>
+    <string name="notif_retour_calme_texte">%1$s : plus d\'alerte en cours.</string>
+    <string name="notif_action_ouvrir">Ouvrir</string>
+    <string name="notif_action_sourdine_1h">Silence 1 h</string>
+    <string name="notif_action_sourdine_24h">Silence 24 h</string>
+    <string name="notif_action_partager">Partager</string>
+    <string name="notif_action_desabonner">Ne plus suivre</string>
+    <string name="notif_groupe_titre">%1$d alertes</string>
+    <string name="notif_groupe_texte">Touchez pour les voir.</string>
+    <string name="notif_source">Source : %1$s</string>
+    <string name="notif_par_defaut">Une alerte que vous suivez vient de se déclencher.</string>
+    <string name="notif_titre_defaut">Nouvelle alerte</string>
+    <string name="test_alerte_source">Tarif streaming</string>
+    <string name="test_alerte_label">Netflix (test)</string>
+    <string name="notif_test_titre">Test de La Bonne Alerte</string>
+    <string name="notif_test_texte">Si vous lisez ceci, les notifications fonctionnent.</string>
+    <string name="notif_echeance_texte">C\'est le jour : %1$s</string>
+    <string name="notif_echeance_date">échéance du %1$s</string>
+</resources>

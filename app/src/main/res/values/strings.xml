@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mon alerte</string>
+    <string name="onglet_kiosque">Kiosque</string>
+    <string name="onglet_mes_alertes">Mes alertes</string>
+    <string name="onglet_forum">Forum</string>
+    <string name="onglet_compte">Compte</string>
+    <string name="onglet_rechercher">Rechercher</string>
+    <string name="tuile_echeances">Mes échéances</string>
+    <string name="tuile_echeances_aide">Contrôle technique, ramonage…</string>
+    <string name="tuile_animaux">Animaux perdus</string>
+    <string name="tuile_animaux_aide">Près de chez vous</string>
+    <string name="onglet_publier">Publier</string>
+    <string name="onglet_compte_connecte">Connecté</string>
+    <string name="publier_proposer">Proposer une source</string>
+    <string name="publier_mes_publications">Mes publications</string>
+    <string name="publier_idees">Idées et bugs : en parler sur le forum</string>
+    <string name="publier_titre">Publier une alerte</string>
+    <string name="publier_intro">Une alerte manque ? Proposez une source : une page web, un flux ou un agenda à surveiller. Après vérification, elle rejoint le kiosque avec la mention « Communautaire ».</string>
+    <string name="lien_echeances">📅 Mes échéances</string>
+    <string name="lien_communaute">🐾 Animaux perdus près de chez vous</string>
+    <plurals name="non_lues">
+        <item quantity="one">%1$d alerte en cours non vue</item>
+        <item quantity="many">%1$d alertes en cours non vues</item>
+        <item quantity="other">%1$d alertes en cours non vues</item>
+    </plurals>
+    <string name="raccourci_mes_alertes">Mes alertes</string>
+    <string name="raccourci_favoris">Mes favoris</string>
+    <string name="raccourci_recherche">Rechercher une alerte</string>
+    <string name="widget_actives_titre">Alertes en cours</string>
+    <string name="widget_actives_description">Le nombre d\'alertes en cours parmi celles que vous suivez.</string>
+    <string name="widget_derniere_titre">Dernière alerte</string>
+    <string name="widget_derniere_description">La dernière alerte reçue sur ce téléphone.</string>
+    <string name="widget_connexion">Connectez-vous dans l\'app.</string>
+    <plurals name="widget_calme">
+        <item quantity="one">Rien à signaler (%1$d suivie)</item>
+        <item quantity="many">Rien à signaler (%1$d suivies)</item>
+        <item quantity="other">Rien à signaler (%1$d suivies)</item>
+    </plurals>
+    <string name="widget_rien">Aucune alerte reçue pour l\'instant.</string>
+    <plurals name="widget_en_cours">
+        <item quantity="one">%1$d alerte en cours</item>
+        <item quantity="other">%1$d alertes en cours</item>
+    </plurals>
+    <string name="tuile_label">Vérifier mes alertes</string>
+    <string name="partage_titre">Proposer une source</string>
+    <string name="partage_recu_texte">Vous voulez être prévenu quand cette page change ? Proposez-la comme nouvelle alerte : l\'adresse est copiée, collez-la dans le formulaire du site.</string>
+    <string name="partage_bouton">Ouvrir le formulaire</string>
+    <string name="partage_copie">Adresse copiée</string>
+    <string name="deux_volets_titre">Choisissez une alerte</string>
+    <string name="deux_volets_message">Son détail s\'affichera ici.</string>
+    <string name="badge_plus_de_99">99+</string>
+    <string name="bientot">Cet écran arrive bientôt.</string>
+    <string name="accueil_titre">Choisissez vos premières alertes</string>
+    <string name="accueil_texte">Touchez une alerte pour la suivre : elle apparaîtra ensuite dans Mes alertes.</string>
+    <string name="accueil_fermer">Fermer</string>
+    <string name="retour_fiche">Retour à la fiche</string>
+</resources>

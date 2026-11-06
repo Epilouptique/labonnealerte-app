@@ -1,0 +1,23 @@
+<p><b>La Bonne Alerte</b> est le kiosque d'alertes gratuit, sans publicité et open source de labonnealerte.fr. Choisissez ce qui compte pour vous, et recevez une notification quand ça bouge. Que du signal.</p>
+
+<p><b>Plus de 260 alertes</b>, en France, en Belgique, au Québec et ailleurs :</p>
+<ul>
+<li>Vigilances météo, crues, qualité de l'air, pollens</li>
+<li>Coupures d'eau et d'électricité, pannes de services en ligne, transports</li>
+<li>Vie locale de votre commune</li>
+<li>Bons plans, jeux offerts, sorties</li>
+<li>Animaux perdus près de chez vous</li>
+</ul>
+
+<p><b>Des notifications sans Google.</b> L'application reçoit vos alertes instantanément grâce à UnifiedPush (avec ntfy, NextPush ou un autre distributeur libre). Sans distributeur, elle vérifie elle-même toutes les 15 minutes environ.</p>
+
+<p><b>Simple et respectueuse :</b></p>
+<ul>
+<li>Le kiosque se consulte sans compte</li>
+<li>Connexion par code reçu par e-mail, sans mot de passe</li>
+<li>Heures calmes la nuit, plafond de notifications, silence d'une heure ou d'une journée</li>
+<li>Historique de vos notifications, mode sombre, grandes polices</li>
+<li>Aucun traceur, aucune publicité, aucune dépendance à Google</li>
+</ul>
+
+<p>Code source : https://github.com/Epilouptique/labonnealerte (site) — application sous licence MIT.</p>

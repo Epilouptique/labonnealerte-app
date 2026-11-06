@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="com_titre">Animaux perdus</string>
+    <string name="com_intro">Autour de votre commune. Vous croisez un animal ? Dites-le. C\'est le vôtre ? Prévenez le quartier.</string>
+    <string name="com_chat">Chats</string>
+    <string name="com_chien">Chiens</string>
+    <string name="com_vide_titre">Aucun signalement près de chez vous</string>
+    <string name="com_vide_message">Tant mieux ! Les nouveaux signalements de votre secteur s\'afficheront ici.</string>
+    <string name="com_connexion">Connectez-vous et indiquez votre commune pour voir les signalements de votre secteur.</string>
+    <string name="com_se_connecter">Se connecter</string>
+    <string name="com_signaler">Signaler un animal perdu</string>
+    <string name="com_rayon">Dans un rayon de %1$d km</string>
+    <string name="com_vu_n">Vu %1$d fois</string>
+    <string name="com_expire">Jusqu\'au %1$s</string>
+    <string name="com_resolu">Retrouvé</string>
+    <string name="com_je_l_ai_vu">Je l\'ai vu</string>
+    <string name="com_prolonger">Prolonger</string>
+    <string name="com_retrouve">Il est retrouvé</string>
+    <string name="com_voir_lien">Voir l\'annonce</string>
+    <string name="com_ou">Où ? (rue, lieu)</string>
+    <string name="com_quand">Quand ? (ce matin, hier soir…)</string>
+    <string name="com_envoyer">Envoyer</string>
+    <string name="com_type">Animal</string>
+    <string name="com_commune">Commune où il a disparu</string>
+    <string name="com_description">Description (5 à 500 caractères) : couleur, collier, nom…</string>
+    <string name="com_lien">Lien vers une annonce (facultatif)</string>
+    <string name="com_publier">Prévenir le voisinage</string>
+    <string name="com_rayon_choix">Rayon d\'alerte</string>
+    <string name="com_msg_ok">C\'est fait. Merci !</string>
+    <string name="com_msg_rejoint">Un signalement existait déjà dans cette commune : vous le suivez.</string>
+    <string name="com_msg_hors_ligne">Pas de connexion internet.</string>
+    <string name="com_msg_refus">Non accepté :</string>
+    <string name="com_msg_erreur">Le service ne répond pas. Réessayez dans un moment.</string>
+    <string name="com_retour">Retour</string>
+    <string name="com_commune_inconnue">Commune inconnue</string>
+    <string name="com_km">%1$d km</string>
+    <string name="com_vie_privee">Seule la commune est partagée, jamais votre position exacte.</string>
+    <string name="com_signaler_abus">Signaler un abus</string>
+    <string name="com_masquer">Masquer</string>
+    <string name="com_msg_masque">Signalement masqué. Pour le revoir : Réglages › Confidentialité.</string>
+</resources>

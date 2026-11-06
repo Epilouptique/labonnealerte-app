@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>MagicNumber:AppPreferences.kt:AppPreferences$0.85f</ID>
+    <ID>MagicNumber:AppPreferences.kt:AppPreferences$23</ID>
+    <ID>MagicNumber:AppPreferences.kt:AppPreferences$3</ID>
+    <ID>MagicNumber:CatalogRepository.kt:CatalogRepository$299</ID>
+    <ID>MagicNumber:CommunityRepository.kt:ReportType.CHAT$10</ID>
+    <ID>MagicNumber:CommunityRepository.kt:ReportType.CHAT$15</ID>
+    <ID>MagicNumber:CommunityRepository.kt:ReportType.CHAT$20</ID>
+    <ID>MagicNumber:CommunityRepository.kt:ReportType.CHAT$30</ID>
+    <ID>MagicNumber:CommunityRepository.kt:ReportType.CHAT$50</ID>
+    <ID>MagicNumber:CommunityRepository.kt:ReportType.CHIEN$10</ID>
+    <ID>MagicNumber:CommunityRepository.kt:ReportType.CHIEN$15</ID>
+    <ID>MagicNumber:CommunityRepository.kt:ReportType.CHIEN$20</ID>
+    <ID>MagicNumber:CommunityRepository.kt:ReportType.CHIEN$30</ID>
+    <ID>MagicNumber:CommunityRepository.kt:ReportType.CHIEN$50</ID>
+    <ID>MagicNumber:EcheancesRepository.kt:10</ID>
+    <ID>MagicNumber:ForumRepository.kt:ForumRepository$40</ID>
+    <ID>MagicNumber:NotificationHistoryRepository.kt:NotificationHistoryRepository$180L</ID>
+    <ID>MagicNumber:NotificationHistoryRepository.kt:NotificationHistoryRepository$3_600_000</ID>
+    <ID>MagicNumber:SessionStore.kt:KeystoreTokenCipher$128</ID>
+    <ID>MagicNumber:SessionStore.kt:KeystoreTokenCipher$256</ID>
+  </CurrentIssues>
+</SmellBaseline>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="forum_titre">Forum</string>
+    <string name="forum_intro">Posez vos questions, proposez des idées, entraidez-vous.</string>
+    <string name="forum_categories">Rubriques</string>
+    <string name="forum_recents">Sujets récents</string>
+    <string name="forum_nouveau">Nouveau sujet</string>
+    <plurals name="forum_sujets_n">
+        <item quantity="one">%1$d sujet</item>
+        <item quantity="other">%1$d sujets</item>
+    </plurals>
+    <plurals name="forum_reponses_n">
+        <item quantity="one">%1$d réponse</item>
+        <item quantity="other">%1$d réponses</item>
+    </plurals>
+    <string name="forum_par">par %1$s</string>
+    <string name="forum_verrouille">Sujet fermé</string>
+    <string name="forum_charger_plus">Voir la suite</string>
+    <string name="forum_erreur">Le forum n\'a pas pu être chargé.</string>
+    <string name="forum_vide_titre">Aucun sujet ici pour l\'instant</string>
+    <string name="forum_vide_message">Lancez la discussion !</string>
+    <string name="forum_repondre">Votre réponse</string>
+    <string name="forum_envoyer">Envoyer</string>
+    <string name="forum_connexion_requise">Connectez-vous pour répondre.</string>
+    <string name="forum_se_connecter">Se connecter</string>
+    <string name="forum_signaler">Signaler ce message</string>
+    <string name="forum_signaler_confirmer">Signaler ce message à la modération ?</string>
+    <string name="forum_plus">Plus d\'actions</string>
+    <string name="forum_retour">Retour</string>
+    <string name="forum_sujet_alerte">Discussions sur cette alerte</string>
+    <string name="forum_sujets_de">Sujets de %1$s</string>
+    <string name="forum_rubrique">Rubrique</string>
+    <string name="forum_titre_sujet">Titre (5 à 140 caractères)</string>
+    <string name="forum_message">Votre message</string>
+    <string name="forum_publier">Publier</string>
+    <string name="forum_compteur">%1$d / %2$d</string>
+    <string name="forum_msg_envoye">Message publié.</string>
+    <string name="forum_msg_signale">Merci, le message a été signalé.</string>
+    <string name="forum_msg_hors_ligne">Pas de connexion internet.</string>
+    <string name="forum_msg_connexion">Connectez-vous pour écrire sur le forum.</string>
+    <string name="forum_msg_trop">Vous avez beaucoup écrit récemment : réessayez plus tard.</string>
+    <string name="forum_msg_verrouille">Ce sujet est fermé aux nouvelles réponses.</string>
+    <string name="forum_msg_refuse">Message refusé :</string>
+    <string name="forum_msg_erreur">Le forum ne répond pas. Réessayez dans un moment.</string>
+    <string name="forum_masquer_auteur">Masquer cet auteur</string>
+    <string name="forum_msg_masque">Auteur masqué. Pour le revoir : Réglages › Confidentialité.</string>
+</resources>

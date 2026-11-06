@@ -1,0 +1,60 @@
+name: Release
+
+# Declenche A LA MAIN par Hugo (onglet Actions > Release > Run workflow), jamais automatiquement.
+# Secrets GitHub a creer (Settings > Secrets and variables > Actions) :
+#   LBA_KEYSTORE_BASE64   : le keystore de release encode en base64
+#   LBA_KEYSTORE_PASSWORD : mot de passe du keystore
+#   LBA_KEY_ALIAS         : alias de la cle
+#   LBA_KEY_PASSWORD      : mot de passe de la cle
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Etiquette de version (ex. v0.1.0)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Keystore (hors depot)
+        run: |
+          mkdir -p "$RUNNER_TEMP/lba"
+          echo "${{ secrets.LBA_KEYSTORE_BASE64 }}" | base64 -d > "$RUNNER_TEMP/lba/release.jks"
+          {
+            echo "storeFile=$RUNNER_TEMP/lba/release.jks"
+            echo "storePassword=${{ secrets.LBA_KEYSTORE_PASSWORD }}"
+            echo "keyAlias=${{ secrets.LBA_KEY_ALIAS }}"
+            echo "keyPassword=${{ secrets.LBA_KEY_PASSWORD }}"
+          } > "$RUNNER_TEMP/lba/signing.properties"
+      - name: Construire l'APK signe (build reproductible)
+        env:
+          LBA_SIGNING_PROPERTIES: ${{ runner.temp }}/lba/signing.properties
+          SOURCE_DATE_EPOCH: 0
+        run: ./gradlew --no-configuration-cache assembleFossRelease
+      - name: Empreinte
+        run: |
+          cp app/build/outputs/apk/foss/release/app-foss-release.apk app-foss-release.apk
+          sha256sum app-foss-release.apk > app-foss-release.apk.sha256
+          cat app-foss-release.apk.sha256
+      - name: Publier la release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ inputs.tag }}
+          files: |
+            app-foss-release.apk
+            app-foss-release.apk.sha256
+          body_path: fastlane/metadata/android/fr-FR/changelogs/1.txt
+      - name: Nettoyer
+        if: always()
+        run: rm -rf "$RUNNER_TEMP/lba"

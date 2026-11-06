@@ -1,0 +1,1 @@
+Première version : kiosque, détail des alertes, connexion par code, abonnements, notifications sans Google (UnifiedPush ou vérification périodique), diagnostic des notifications.

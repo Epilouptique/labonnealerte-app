@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>ComplexCondition:KiosqueScreen.kt:state.enCeMoment.isNotEmpty() &amp;&amp; state.filter.query.isBlank() &amp;&amp; state.filter.mode == KiosqueMode.TOUT &amp;&amp; state.filter.category == null &amp;&amp; state.filter.group == null</ID>
+  </CurrentIssues>
+</SmellBaseline>
