@@ -30,6 +30,12 @@ jobs:
       - name: Second checkout dans un autre chemin
         run: cp -a build-a build-b
 
+      - name: Aligner sur F-Droid (retrait de la verification des dependances)
+        # F-Droid retire ce fichier via le prebuild de la recette. Les empreintes sont
+        # generees sous Windows et ne peuvent pas couvrir Linux : aapt2 est un artefact
+        # natif par plateforme (aapt2-...-linux.jar vs -windows.jar). Ce workflow doit
+        # reproduire la compilation F-Droid, donc il applique le meme retrait.
+        run: rm -f build-a/gradle/verification-metadata.xml build-b/gradle/verification-metadata.xml
       - name: Build A
         working-directory: build-a
         run: ./gradlew --no-daemon --no-build-cache --no-configuration-cache assembleFossRelease
