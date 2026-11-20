@@ -1,0 +1,23 @@
+<p><b>La Bonne Alerte</b> is the free, ad-free and open source alert kiosk from labonnealerte.fr. Pick what matters to you, and get a notification when something happens. Signal only.</p>
+
+<p><b>More than 260 alerts</b>, in France, Belgium, Quebec and beyond:</p>
+<ul>
+<li>Weather warnings, floods, air quality, pollen</li>
+<li>Water and power cuts, online service outages, transport</li>
+<li>Local news from your own town</li>
+<li>Good deals, free games, events</li>
+<li>Lost pets near you</li>
+</ul>
+
+<p><b>Notifications without Google.</b> The app receives your alerts instantly through UnifiedPush (with ntfy, NextPush or any other free distributor). Without a distributor, it checks on its own roughly every 15 minutes.</p>
+
+<p><b>Simple and respectful:</b></p>
+<ul>
+<li>The kiosk can be browsed without an account</li>
+<li>Sign in with a code sent by email, no password</li>
+<li>Quiet hours at night, notification cap, one-hour or one-day mute</li>
+<li>History of your notifications, dark mode, large fonts</li>
+<li>No trackers, no ads, no dependency on Google</li>
+</ul>
+
+<p>Source code: https://github.com/Epilouptique/labonnealerte (website) - application under MIT licence.</p>

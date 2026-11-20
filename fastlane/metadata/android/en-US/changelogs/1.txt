@@ -1,0 +1,1 @@
+First release: kiosk, alert details, sign-in by code, subscriptions, notifications without Google (UnifiedPush or periodic check), notification diagnostics.
