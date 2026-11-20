@@ -22,11 +22,11 @@ keystore.properties
 signing.properties
 *.p12
 *.pem
-google-services.json
 .env
 .env.*
 # Divers
 node_modules/
 *.log
 build-log.txt
+!docs/captures/
 /release/

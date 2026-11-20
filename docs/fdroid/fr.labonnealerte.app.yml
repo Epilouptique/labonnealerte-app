@@ -1,0 +1,39 @@
+# BROUILLON de recette fdroiddata — a soumettre par Hugo (voir docs/fdroid/README.md).
+# Les champs « A REMPLIR » dependent du depot GitHub de l'app (pas encore cree) et de la cle de release.
+Categories:
+  - Internet
+  - Science & Education
+License: MIT
+AuthorName: Hugo
+WebSite: https://labonnealerte.fr
+SourceCode: https://github.com/A-REMPLIR/labonnealerte-android
+IssueTracker: https://github.com/A-REMPLIR/labonnealerte-android/issues
+Donate: https://ko-fi.com/labonnealerte
+
+AutoName: La Bonne Alerte
+
+RepoType: git
+Repo: https://github.com/A-REMPLIR/labonnealerte-android.git
+# Build reproductible : F-Droid publiera l'APK signe par Hugo s'il est identique au sien.
+Binaries: https://github.com/A-REMPLIR/labonnealerte-android/releases/download/v%v/app-foss-release.apk
+
+Builds:
+  - versionName: 0.1.0
+    versionCode: 1
+    commit: A-REMPLIR-hash-complet
+    subdir: app
+    gradle:
+      - foss
+
+AllowedAPKSigningKeys: 2a28184d485fb7891d78ee726c251a9630480d23a82f867bedab8e50f524b7bd
+
+# Anti-fonctionnalite a discuter avec F-Droid : l'app depend du service labonnealerte.fr
+# (libre, MIT) dont l'adresse n'est pas modifiable dans l'app.
+AntiFeatures:
+  TetheredNet:
+    fr: L'application utilise le service labonnealerte.fr, dont le code est libre mais dont l'adresse ne peut pas etre changee.
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 0.1.0
+CurrentVersionCode: 1
