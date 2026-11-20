@@ -22,6 +22,9 @@ jobs:
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Compiler exactement le commit taggue, celui que F-Droid compilera.
+          ref: ${{ inputs.tag }}
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -37,10 +40,15 @@ jobs:
             echo "keyAlias=${{ secrets.LBA_KEY_ALIAS }}"
             echo "keyPassword=${{ secrets.LBA_KEY_PASSWORD }}"
           } > "$RUNNER_TEMP/lba/signing.properties"
+      - name: Aligner sur F-Droid (retrait de la verification des dependances)
+        # Les empreintes sont generees sous Windows et ne couvrent pas Linux (aapt2 est
+        # un artefact natif par plateforme). F-Droid retire ce fichier via le prebuild
+        # de la recette : la release doit compiler dans les memes conditions.
+        run: rm -f gradle/verification-metadata.xml
+
       - name: Construire l'APK signe (build reproductible)
         env:
           LBA_SIGNING_PROPERTIES: ${{ runner.temp }}/lba/signing.properties
-          SOURCE_DATE_EPOCH: 0
         run: ./gradlew --no-configuration-cache assembleFossRelease
       - name: Empreinte
         run: |
